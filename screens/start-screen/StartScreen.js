@@ -1,21 +1,19 @@
 import { View, Text, TouchableOpacity } from "react-native"
+import { Button } from "react-native-paper"
 
 
 function StartScreen({navigation}){
     return(
-        <View className='flex flex-1 bg-white justify-center'>
+        <View className='flex flex-1 bg-white dark:bg-slate-300 justify-center'>
             <View className='mr-10 ml-10'>
 
-            <Text>
-                StartScreen
-            </Text>
-            <TouchableOpacity className='border rounded-md bg-red-300'
+            <Button className='border rounded-md bg-red-300'
             onPress={() => navigation.navigate('second')}
             >
-                <Text>
+                <Text className='font-bold text-white'>
                     Go Second Screen
                 </Text>
-            </TouchableOpacity>
+            </Button>
                 </View>
         </View>
     )

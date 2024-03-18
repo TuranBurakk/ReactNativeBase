@@ -1,5 +1,5 @@
 import { View} from 'react-native';
-import Routers from './router/Routers';
+import Routers from './navigators/Routers';
 
 export default function App() {
   return (
